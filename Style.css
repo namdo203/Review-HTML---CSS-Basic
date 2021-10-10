@@ -97,8 +97,51 @@ h5 {
 .service-box {
     font-size: 1.7 em;
     text-align: center;
+/*
+    border: 2px solid #eee;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 10px 0 #eee;
+    margin: 50px 5% 0 5%;
+    padding: 20px;
+    width: 40%;
+*/
 }
 
 .service-box img{
     width: 125px;
+}
+
+#team .section-text {
+    font-size: 1.9em;
+    text-align: center;
+}
+
+#team .member-name {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+#team img {
+    width: 250px;
+    height: 180px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 1.9em;
+}
+
+.address {
+    font-style: normal;
+    font-size: 0.8em;
+}
+
+.footer a {
+    color: rgb(67 , 163 , 230);
+    text-decoration: none;
+}
+
+.footer ul {
+    list-style: none;
 }
