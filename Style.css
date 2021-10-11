@@ -13,7 +13,7 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font: Roboto Condensed;
+    font: "Roboto Condensed";
 }
 
 h1 {
@@ -41,22 +41,53 @@ h4 {
     font-size: 1.5em;
     letter-spacing: 0.4px;
     line-height: 1em;
+    margin-bottom: 15px;
 }
 
 h5 {
     font-size: 1.2em;
     line-height: 1em;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .nav-bar  {
     background-color: rgb(17, 17, 48);
     color: white;
+    padding-top: 14px 0;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 16px;
+}
+
+#team >div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#team > div > article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .nav-bar a {
     font-size: 2em;
     text-decoration: none;
     color: white;
+}
+
+.nav-bar-url {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-bar-url li {
+    list-style-type: none;
+    text-align: center;
 }
 
 .quote {
@@ -76,28 +107,39 @@ h5 {
     position: relative;
 }
 
-.dark-background {
-    background-color: rgb(17, 17, 48);
-    color: whitesmoke;
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 75px 0;
+}
+
+.text {
     font-size: 2em;
     font-weight: 100;
     text-align: center;
+    margin: 20px 0;
+}
+
+
+.dark-background {
+    background-color: rgb(17, 17, 48);
+    color: whitesmoke;
 }
 
 .link-btn {
-    background-color: thistle;
+    background-color: rgb(67 , 163 , 230);
     color: whitesmoke;
     font-family: "Roboto Condensed";
     font-size: 2em;
     letter-spacing: 0.5px;
     text-align: center;
     text-decoration: none;
+    padding: 10px 30px;
 }
 
 .service-box {
-    font-size: 1.7 em;
+    font-size: 1.7em;
     text-align: center;
-/*
     border: 2px solid #eee;
     border-radius: 20px;
     box-sizing: border-box;
@@ -105,11 +147,25 @@ h5 {
     margin: 50px 5% 0 5%;
     padding: 20px;
     width: 40%;
-*/
 }
 
 .service-box img{
     width: 125px;
+}
+
+#team {
+    padding: 75px 0;
+    margin: 0 auto;
+}
+
+#team p {
+    width: 60%;
+    margin: 10px auto;
+}
+
+#team hr {
+    margin: 20px auto 30px auto;
+    width: 40%;
 }
 
 #team .section-text {
@@ -130,11 +186,17 @@ h5 {
 .footer {
     text-align: center;
     font-size: 1.9em;
+    padding: 40px 100px 40px 100px;
+    margin: auto auto 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .address {
     font-style: normal;
     font-size: 0.8em;
+    margin: 30px;
 }
 
 .footer a {
@@ -144,4 +206,86 @@ h5 {
 
 .footer ul {
     list-style: none;
+    text-align: center;
+    padding: 0px;
+
+}
+
+/*
+.map-frame {
+    height: 375px;
+    width: 60%;
+}
+*/
+
+.schedule-table {
+    margin: 0 auto 40px auto;
+    font-size: 1.5em;
+}
+
+.schedule-table th, td {
+    border-bottom-style: solid;
+    font-weight: 1px;
+    color: black;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+}
+
+.copyright {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(233, 201, 179);
+    font-weight: bold;
+    opacity: 0.7;
+    border: solid;
+    border-radius: 2em;
+    margin: auto 20px 10px;
+    padding: 4px;
+}
+
+#general-information {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#general-information .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
+}
+
+#structure > div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.slot-form-container {
+    width: 40%;
+    margin: 18px auto 0 auto;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.slot-form-container label {
+    line-height: 15px;
+    margin: 5px;
+}
+
+.slot-form-container > input, select {
+    height: 20px;
+    outline: none;
+    padding: 3px 3px 3px 3px;
+    width: 100%;
+}
+
+.slot-form-container button {
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    padding: 9px 9px 9px 9px;
+    margin-top: 15px;
 }
